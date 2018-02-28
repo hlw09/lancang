@@ -1,0 +1,114 @@
+//设置了1rem=750设计稿的100px
+//根据设计稿字号除以100，单位rem添加字体变量，方便统一改动
+$font36= 0.36rem
+$font30= 0.3rem
+$font32= 0.32rem
+$font24= 0.24rem
+$font20= 0.20rem
+$font22= 0.22rem
+$font28= 0.28rem
+$font26= 0.26rem
+
+//风格颜色
+$bearkcolor = #999
+$bluecolor = #DFBE7A
+$mainColor = #dfbe7a//主色调
+$redColor = #e05c58//标签色
+$fontColor = #373447//深色字体
+$fontCray1 = #6d6d6d//灰色字体
+$fontCray2 = #999999//浅灰色字体
+$grayBorder = #cccccc //border
+$grayBtn = #d7d7d7//btn
+$grayBg = #f5f5f5//区分模块背景
+
+//100vw是设备的宽度，除以3.75可以让1rem的大小在iPhone6下等于100px,除以2即为750设计稿的100px
+html {
+  font-size: calc(((100vw/3.75)/2));
+}
+.fade-enter-active{
+  width 100%
+  left 0
+  position absolute
+  transition: left 1s
+}
+.fade-leave-active{
+  width 100%
+  right: 0
+  position absolute
+  transition: right 1s
+}
+.fade-enter /* .fade-leave-active in below version 2.1.8 */ {
+  width 100%
+  position absolute
+  left -100%
+}
+.fade-leave-to{
+  width 100%
+  position absolute
+  right -100%
+}
+//灰色按钮
+.grayBtn
+  width 100%
+  height .98rem
+  background #dbdbdb
+  text-align center
+  line-height .98rem
+  color #999999
+  font-size $font36
+//蓝色按钮
+.blueBtn
+  width 100%
+  height .98rem
+  background #1e93ff
+  text-align center
+  line-height .98rem
+  color #ffffff
+  font-size $font36
+// 加载指示器
+.preloader-indicator-overlay
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background: rgba(0, 0, 0, 0.4)
+  z-index: 10600
+  -webkit-transition-duration: 400ms
+  transition-duration: 400ms
+  visibility: visible
+  opacity: 0
+  background: none
+.preloader-indicator-modal
+  position: absolute
+  left: 50%
+  top: 50%
+  padding: 0.4rem
+  margin-left: -1.15rem
+  margin-top: -1.15rem
+  z-index: 11000
+  border-radius: 0.25rem
+  .preloader
+    display: block
+    width: 1.5rem
+    height: 1.5rem
+    -webkit-transform-origin: 50%
+    transform-origin: 50%
+    -webkit-animation: preloader-spin 1s steps(12, end) infinite
+    animation: preloader-spin 1s steps(12, end) infinite
+.preloader-white:after
+  display: block
+  content: ""
+  width: 100%
+  height: 100%
+  background-image: url("data:image/png;base64,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")
+  background-position: 50%
+  background-size: 100%
+  background-repeat: no-repeat
+@-webkit-keyframes preloader-spin
+  100%
+    -webkit-transform: rotate(360deg)
+@keyframes preloader-spin
+  100%
+    -webkit-transform: rotate(360deg)
+    transform: rotate(360deg)

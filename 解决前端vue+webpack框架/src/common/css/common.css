@@ -1,0 +1,60 @@
+ /* 加减小标题*/
+ .add-icom{height:20px; width:20px; display:block; position:relative;} 
+
+.icon_style{border-radius:.5rem;-webkit-border-radius:.5rem;-moz-border-radius:.5rem; background:#DBB76C; width:.5rem; height:.5rem;}
+
+.icon_style:before, .icon_style:after{content:''; height:2px; width:.3rem; display:block; background:#fff; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; position:absolute; top:.23rem; left:.1rem;}
+
+.icon_style:after{height:.3rem; width:2px; top:.1rem; left:.23rem;}
+
+.ininer-icom{height:20px; width:20px; display:block; position:relative;} 
+
+.icon_instyle{border-radius:.5rem;-webkit-border-radius:.5rem;-moz-border-radius:.5rem; border:1px solid #DBB76C; width:.5rem; height:.5rem;}
+
+.icon_instyle:before{content:''; height:2px; width:.3rem; display:block; background:#DBB76C; border-radius:10px;-webkit-border-radius:10px;-moz-border-radius:10px; position:absolute; top:.23rem; left:.1rem;}
+
+.cart-count{width: .7rem; line-height:.6rem;font-size:.36rem;text-align: center;}
+
+
+/* 下箭头*/
+.demoSpan1{overflow:hidden; height:25px;}
+
+.demoSpan1:before{content:''; height:10px; width:10px; display:block; border:2px solid #333; border-right-width:0; border-top-width:0; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); position:absolute; bottom:7px; left:6px;}
+
+
+/* 搜索标题*/
+.searchicon:before{content:''; height:15px; display:block; position:absolute; top:0; left:0; }
+.searchicon:after{content:''; height:8px; display:block; position:absolute; top:0; left:0; }
+
+.searchicon:before{width:15px; border:2px #c2c2c2 solid; border-radius:100%;-webkit-border-radius:100%;-moz-border-radius:100%;}
+
+.searchicon:after{width:4px; background:#c2c2c2; transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);-ms-transform:rotate(-45deg); top:14px; left:16px;}
+
+
+/* 旋转*/
+.animationlg
+{
+animation:myfirst 0.5s;
+-moz-animation:myfirst 0.5s; /* Firefox */
+-webkit-animation:myfirst 0.5s; /* Safari and Chrome */
+-o-animation:myfirst 0.5s; /* Opera */
+}
+@keyframes myfirst
+{
+0%   {-webkit-transform: rotate(-0deg);}
+25%  {-webkit-transform: rotate(-45deg);}
+50%  {-webkit-transform: rotate(-90deg);}
+75%  {-webkit-transform: rotate(-135deg);}
+100% {-webkit-transform: rotate(-180deg);animation-fill-mode:forwards;}
+}
+
+/* 地理位置图标*/
+.radess{width:26px;}
+
+.radess:before{content:''; height:16px; width:16px; border:5px solid #333; display:block; position:absolute; top:2px; left:0px; z-index:1; line-height:26px; border-radius:40px;-webkit-border-radius:40px;-moz-border-radius:40px; color:#fff; text-align:center;}
+
+.radess:after{content:''; height:0px; width:0px; display:block; position:absolute; bottom:2px; left:3px; border:10px transparent solid; border-top-color:#333; border-width:15px 10px 0px 10px; }
+
+.textMessPleas{
+	position: relative;
+}
